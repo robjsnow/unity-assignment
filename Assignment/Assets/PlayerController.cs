@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public Inventory inventory;
     public float speed = 5.0f;
     private Rigidbody2D rb;
 
@@ -22,3 +23,4 @@ public class PlayerController : MonoBehaviour
         rb.velocity = movement * speed;
     }
 }
+
